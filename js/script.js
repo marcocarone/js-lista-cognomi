@@ -3,12 +3,20 @@ var cognomi = ["CARONE", "FIORE", "LANZI", "BAGLINI", "RICCIO", "LOGOZZO", "PATT
 // chiedo il cognome all'utente
 var cognomeUtente = prompt("Inserisci il tuo Cognome").toUpperCase();
 while (cognomeUtente.length <= 0) {
-  cognomeUtente = prompt("Inserisci il tuo Cognome");
+  cognomeUtente = prompt("Inserisci il tuo Cognome").toUpperCase();
 }
 // aggiungo il cognome utente nella lista
 cognomi.push(cognomeUtente);
 // ordino la lista
 cognomi.sort();
+
+// METODO CON WHILE
+// var i = 0;
+// while (i < cognomi.length) {
+//   document.getElementById("lista-cognomi").innerHTML += "<li>" + cognomi[i] + "</li>";
+//   i++;
+// }
+
 for (var i = 0; i < cognomi.length; i++) {
   document.getElementById("lista-cognomi").innerHTML += "<li>" + cognomi[i] + "</li>";
 }
