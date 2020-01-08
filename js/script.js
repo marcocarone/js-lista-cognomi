@@ -1,5 +1,5 @@
 // Creo Array lista cognomi
-var cognomi = ["CARONE", "FIORE", "LANZI", "BAGLINI", "RICCIO", "LOGOZZO", "PATTI"];
+var cognomi = ["CARONE", "FIORE", "LANZI", "BAGLINI", "RICCIO", "LOGOZZO", "PATTI", "TROTTA", "PACIFICO", "DI PILLA", "LUGLI"];
 // chiedo il cognome all'utente
 var cognomeUtente = prompt("Inserisci il tuo Cognome").toUpperCase();
 while (cognomeUtente.length <= 0) {
@@ -14,4 +14,4 @@ for (var i = 0; i < cognomi.length; i++) {
 }
 // scrivo la posizione del nome utente nella lista
 var posizione = cognomi.indexOf(cognomeUtente) + 1;
-document.getElementById("posizione").innerHTML = "Sei nella posizione numero " + posizione + " della lista.";
+document.getElementById("posizione").innerHTML = "Sei nella posizione numero " + posizione + " dell'elenco studenti.";
