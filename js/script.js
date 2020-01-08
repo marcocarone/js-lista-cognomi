@@ -1,9 +1,10 @@
-var cognomi = ["Carone", "Fiore", "Lanzi", "Baglini"];
+var cognomi = ["carone", "fiore", "lanzi", "baglini"];
 
-var cognomeUtente = prompt("Inserisci il tuo Cognome");
+var cognomeUtente = prompt("Inserisci il tuo Cognome").toLowerCase();
 while (cognomeUtente.length <= 0) {
   cognomeUtente = prompt("Inserisci il tuo Cognome");
 }
+
 
 cognomi.push(cognomeUtente);
 cognomi.sort();
